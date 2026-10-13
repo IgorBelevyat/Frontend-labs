@@ -1,0 +1,107 @@
+.clocks > div {
+    display: inline-block;
+    margin-right: 60px;
+    vertical-align: top;
+}
+
+.clock {
+    width: 205px;
+    height: 189px;
+    box-sizing: border-box;
+    background-color: #f2f2f2;
+    border: 2px solid #000000;
+    border-radius: 22px;
+}
+
+.dot {
+    width: 21px;
+    height: 20px;
+    box-sizing: border-box;
+    background-color: #ff0000;
+    border: 1px solid #000000;
+    border-radius: 50%;
+}
+
+.hand {
+    background-color: #000000;
+}
+
+.clock-position {
+    position: relative;
+}
+
+.clock-position .dot,
+.clock-position .hand {
+    position: absolute;
+}
+
+.clock-position .dot-top {
+    left: 89px;
+    top: 7px;
+}
+
+.clock-position .dot-right {
+    left: 170px;
+    top: 82px;
+}
+
+.clock-position .dot-bottom {
+    left: 89px;
+    top: 157px;
+}
+
+.clock-position .dot-left {
+    left: 7px;
+    top: 82px;
+}
+
+.clock-position .hand-minute {
+    left: 97px;
+    top: 16px;
+    width: 6px;
+    height: 96px;
+}
+
+.clock-position .hand-hour {
+    left: 82px;
+    top: 89px;
+    width: 78px;
+    height: 6px;
+}
+
+.clock-transform {
+    display: grid;
+    place-items: center;
+}
+
+.clock-transform > div {
+    grid-area: 1 / 1;
+}
+
+.clock-transform .dot-top {
+    transform: translateY(-76px);
+}
+
+.clock-transform .dot-right {
+    transform: rotate(90deg) translateY(-81px);
+}
+
+.clock-transform .dot-bottom {
+    transform: rotate(180deg) translateY(-75px);
+}
+
+.clock-transform .dot-left {
+    transform: rotate(-90deg) translateY(-82px);
+}
+
+.clock-transform .hand-minute {
+    width: 6px;
+    height: 96px;
+    transform: translateY(-28px);
+}
+
+.clock-transform .hand-hour {
+    width: 6px;
+    height: 78px;
+    transform: translateX(21px) rotate(90deg);
+}

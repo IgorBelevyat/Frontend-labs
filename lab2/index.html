@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Белевят І. С., ІМ-42, ЛР №2, варіант 7</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 700px;
+        }
+
+        td {
+            border: 2px solid #555555;
+            height: 50px;
+            padding: 5px 10px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+
+        .row1 td {
+            background-color: #078f8f;
+            color: #ffffff;
+        }
+
+        .row2 td {
+            background-color: #f5f507;
+            color: #0707f5;
+        }
+
+        .row1:hover td {
+            background-color: #ffffff;
+            color: #078f8f;
+        }
+
+        .row2:hover td {
+            background-color: #0707f5;
+            color: #f5f507;
+        }
+    </style>
+</head>
+<body>
+    <h3>Завдання 1</h3>
+    <table>
+        <tr class="row1">
+            <td colspan="2" rowspan="2">Белевят</td>
+            <td>Ігор</td>
+            <td>Сергійович</td>
+        </tr>
+        <tr class="row2">
+            <td>ІМ-42</td>
+            <td>ЛР-2 Варіант 7</td>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <td></td>
+            <td rowspan="2"></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+
+    <h3>Завдання 2</h3>
+    <div class="clocks">
+        <div>
+            <p>1. position</p>
+            <div class="clock clock-position">
+                <div class="dot dot-top"></div>
+                <div class="dot dot-right"></div>
+                <div class="dot dot-bottom"></div>
+                <div class="dot dot-left"></div>
+                <div class="hand hand-minute"></div>
+                <div class="hand hand-hour"></div>
+            </div>
+        </div>
+        <div>
+            <p>2. transform</p>
+            <div class="clock clock-transform">
+                <div class="dot dot-top"></div>
+                <div class="dot dot-right"></div>
+                <div class="dot dot-bottom"></div>
+                <div class="dot dot-left"></div>
+                <div class="hand hand-minute"></div>
+                <div class="hand hand-hour"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
